@@ -13,17 +13,12 @@
     <script type="text/javascript" src="javascripts/modernizr.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript" src="javascripts/qc_loader.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
         $('#main_content').headsmart()
       })
-      function toLogin() {
-        //以下为按钮点击事件的逻辑。注意这里要重新打开窗口
-        //否则后面跳转到QQ登录，授权页面时会直接缩小当前浏览器的窗口，而不是打开新窗口
-        var A=window.open("oauth/index.php","TencentLogin",
-                "width=450,height=320,menubar=0,scrollbars=1,
-        resizable=1,status=1,titlebar=0,toolbar=0,location=1");
-      }
+
     </script>
 
     <title>Ijoshua.GitHub.io by iJoshua</title>
@@ -57,7 +52,7 @@
         <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true">
   <span class="octicon octicon-link"></span>
-  </a>Welcome to<img src="images/Connect_logo_3.png" onclick="toLogin()" />Ijoshua.GitHub.io</h3>
+  </a>Welcome to<img src="images/Connect_logo_3.png" /> Ijoshua.GitHub.io</h3>
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
 
