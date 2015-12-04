@@ -13,7 +13,8 @@
     <script type="text/javascript" src="javascripts/modernizr.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript" src="javascripts/qc_loader.js"></script>
+    <!--<script type="text/javascript" src="javascripts/qc_loader.js"></script>-->
+    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101270265" data-redirecturi="www.zhizuobiao.com" charset="utf-8"></script>
     <script type="text/javascript">
       $(document).ready(function () {
         $('#main_content').headsmart()
@@ -52,7 +53,17 @@
         <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true">
   <span class="octicon octicon-link"></span>
-  </a>Welcome to<img src="images/Connect_logo_3.png" /> Ijoshua.GitHub.io</h3>
+  </a>Welcome to
+
+          <span id="qqLoginBtn"></span>
+          <script type="text/javascript">
+            QC.Login({
+              btnId:"qqLoginBtn"	//插入按钮的节点id
+            });
+          </script>
+          <!--<img src="images/Connect_logo_3.png" /> -->
+
+          Ijoshua.GitHub.io</h3>
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
 
