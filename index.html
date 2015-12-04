@@ -14,11 +14,16 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
     <!--<script type="text/javascript" src="javascripts/qc_loader.js"></script>-->
-    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101270265" data-redirecturi="www.zhizuobiao.com" charset="utf-8"></script>
+    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101270265" data-redirecturi="iJoshua.github.io" charset="utf-8"></script>
     <script type="text/javascript">
       $(document).ready(function () {
         $('#main_content').headsmart()
+
+        QC.Login({
+          btnId:"qqLoginBtn"	//插入按钮的节点id
+        });
       })
+
 
     </script>
 
@@ -56,11 +61,6 @@
   </a>Welcome to
 
           <span id="qqLoginBtn"></span>
-          <script type="text/javascript">
-            QC.Login({
-              btnId:"qqLoginBtn"	//插入按钮的节点id
-            });
-          </script>
           <!--<img src="images/Connect_logo_3.png" /> -->
 
           Ijoshua.GitHub.io</h3>
